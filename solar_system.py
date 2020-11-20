@@ -72,7 +72,7 @@ class Level_1(Level):
         self.stars = []
         self.stars.append(Star(400, 400, 20, 1000000))
         self.start(clock,events)
-     #функция обрабатывает запуск ракеты  
+     #функция обрабатывает начало движения планеты
     def start(self, clock, events):            
         done = False
         while not done: #обработка событий
@@ -88,7 +88,7 @@ class Level_1(Level):
             self.drawthemall()
             pg.display.flip()
     def process(self, clock, events):
-        #функция обрабатывает полет ракеты    
+        #функция обрабатывает полет планеты   
         done = False
         while not done: #обработка событий
             clock.tick(30)
