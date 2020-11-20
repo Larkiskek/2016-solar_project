@@ -1,8 +1,6 @@
-import pygame as pg
-import math
-pg.init()
-pg.font.init()
+import pygame
 
+<<<<<<< HEAD
 
 SCREEN_SIZE = (800, 800)
 
@@ -75,10 +73,58 @@ class Level_1(Level):
         self.stars.append(Star(400, 400, 20, 1000000))
 
 
+=======
+pygame.init()
+
+
+class Sun():
+    """
+    Устанавливает параметры Солнца и рисует его
+    """
+    pass
+
+
+class Planet():
+    """
+    Управляет движением планет, устанавливает их параметры и рисует их
+    """
+    def __init__(self, number):
+        """
+        Рассчитывает скорость планет, их координаты и ускорения
+        Параметр number выбирает планету из файла
+        """
+        pass
+    pass
+
+
+
+class StartButton():
+   """
+   Рисует стартовую кнопку, проверяет, нажата ли она и начинает симуляцию
+   """
+   pass
+
+
+class PauseButton():
+   """
+   Рисует кнопку паузы, проверяет, нажата ли она и останавливает симуляцию
+   """
+   pass
+
+
+class ResetButton():
+   """
+   Рисует кнопку перезагрузки, проверяет, нажата ли она и перезапускает симуляцию
+   """
+   pass
+
+
+>>>>>>> parent of 6c46d38... Update solar_system..py
 class Processing():
     """
     Обрабатка
     """
+<<<<<<< HEAD
     pass
 
         self.start(clock,events)
@@ -140,3 +186,6 @@ level = menu.menufunc(clock, pg.event)
 
 
 pg.quit()
+=======
+    pass
+>>>>>>> parent of 6c46d38... Update solar_system..py
