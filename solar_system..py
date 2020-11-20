@@ -3,51 +3,7 @@ import math
 pg.init()
 pg.font.init()
 
-<<<<<<< Updated upstream
-pygame.init()
 
-
-class Sun():
-    """
-    Устанавливает параметры Солнца и рисует его
-    """
-    pass
-
-
-class Planet():
-    """
-    Управляет движением планет, устанавливает их параметры и рисует их
-    """
-    def __init__(self, number):
-        """
-        Рассчитывает скорость планет, их координаты и ускорения
-        Параметр number выбирает планету из файла
-        """
-        pass
-    pass
-
-
-
-class StartButton():
-   """
-   Рисует стартовую кнопку, проверяет, нажата ли она и начинает симуляцию
-   """
-   pass
-
-
-class PauseButton():
-   """
-   Рисует кнопку паузы, проверяет, нажата ли она и останавливает симуляцию
-   """
-   pass
-
-
-class ResetButton():
-   """
-   Рисует кнопку перезагрузки, проверяет, нажата ли она и перезапускает симуляцию
-   """
-   pass
-=======
 SCREEN_SIZE = (800, 800)
 
 
@@ -110,7 +66,7 @@ class Star():
     
 class Level(): 
     pass
->>>>>>> Stashed changes
+
 
 class Level_1(Level):
     def __init__(self,clock, events):
@@ -118,13 +74,13 @@ class Level_1(Level):
         self.stars = []
         self.stars.append(Star(400, 400, 20, 1000000))
 
-<<<<<<< Updated upstream
+
 class Processing():
     """
     Обрабатка
     """
     pass
-=======
+
         self.start(clock,events)
      #функция обрабатывает запуск ракеты  
     def start(self, clock, events):            
@@ -184,4 +140,3 @@ level = menu.menufunc(clock, pg.event)
 
 
 pg.quit()
->>>>>>> Stashed changes
