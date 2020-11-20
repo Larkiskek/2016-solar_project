@@ -1,9 +1,13 @@
-import pygame
-
-<<<<<<< HEAD
-
+import pygame as pg
+import math
+pg.init()
+pg.font.init()
 SCREEN_SIZE = (800, 800)
 
+
+class button():
+    pass
+    
 
 class Menu(): 
     def menufunc(self, clock, events): # функция меню 
@@ -46,10 +50,6 @@ class Planet():
             sin = (self.coord[1] - star.coord[1]) / distance
             self.velocity[0] -= round(acceleration * cos)
             self.velocity[1] -= round(acceleration * sin)    
-            print(int(acceleration * cos))
-            print(int(acceleration * sin))
-    
-
 
         
 class Star(): 
@@ -71,62 +71,6 @@ class Level_1(Level):
         self.planet = Planet()
         self.stars = []
         self.stars.append(Star(400, 400, 20, 1000000))
-
-
-=======
-pygame.init()
-
-
-class Sun():
-    """
-    Устанавливает параметры Солнца и рисует его
-    """
-    pass
-
-
-class Planet():
-    """
-    Управляет движением планет, устанавливает их параметры и рисует их
-    """
-    def __init__(self, number):
-        """
-        Рассчитывает скорость планет, их координаты и ускорения
-        Параметр number выбирает планету из файла
-        """
-        pass
-    pass
-
-
-
-class StartButton():
-   """
-   Рисует стартовую кнопку, проверяет, нажата ли она и начинает симуляцию
-   """
-   pass
-
-
-class PauseButton():
-   """
-   Рисует кнопку паузы, проверяет, нажата ли она и останавливает симуляцию
-   """
-   pass
-
-
-class ResetButton():
-   """
-   Рисует кнопку перезагрузки, проверяет, нажата ли она и перезапускает симуляцию
-   """
-   pass
-
-
->>>>>>> parent of 6c46d38... Update solar_system..py
-class Processing():
-    """
-    Обрабатка
-    """
-<<<<<<< HEAD
-    pass
-
         self.start(clock,events)
      #функция обрабатывает запуск ракеты  
     def start(self, clock, events):            
@@ -158,27 +102,18 @@ class Processing():
             pg.display.flip()
         
     def drawthemall(self):
-
-        
         for star in self.stars:
             star.draw()
-    
-
         self.planet.draw()
-        
         
     def movethemall(self):
         self.planet.motion()
     
     
 screen = pg.display.set_mode(SCREEN_SIZE)
-
-
 clock = pg.time.Clock()
-
 """создаем объект меню """
 menu = Menu()     
-
 """ функция выкидывает нам тип уровня:"""
 level = menu.menufunc(clock, pg.event)
 
@@ -186,6 +121,3 @@ level = menu.menufunc(clock, pg.event)
 
 
 pg.quit()
-=======
-    pass
->>>>>>> parent of 6c46d38... Update solar_system..py
